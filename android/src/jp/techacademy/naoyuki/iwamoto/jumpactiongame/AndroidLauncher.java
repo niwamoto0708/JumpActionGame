@@ -20,7 +20,8 @@ public class AndroidLauncher extends AndroidApplication implements ActivityReque
 	private final int SHOW_ADS = 1;
 	private final int HIDE_ADS = 0;
 
-	protected Handler handler = new Handler() {
+	protected Handler handler = new Handler()
+	{
 		@Override
 		public void handleMessage(Message msg) {
 			switch (msg.what) {

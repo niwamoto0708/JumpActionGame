@@ -35,7 +35,7 @@ public class ResultScreen extends ScreenAdapter {
         // 背景の準備
         Texture bgTexture = new Texture("resultback.png");
         mBg = new Sprite(new TextureRegion(bgTexture, 0, 0, 540, 810));
-        mBg.setSize(GUI_WIDTH, GUI_WIDTH);
+        mBg.setSize(GUI_WIDTH, GUI_HEIGHT);
         mBg.setPosition(0, 0);
 
         // GUI用のカメラを設定する

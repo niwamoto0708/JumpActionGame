@@ -1,6 +1,6 @@
 android {
-    buildToolsVersion "25.0.2"
-    compileSdkVersion 25
+    buildToolsVersion "23.0.3"
+    compileSdkVersion 23
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -14,13 +14,10 @@ android {
 
         instrumentTest.setRoot('tests')
     }
-    packagingOptions {
-        exclude 'META-INF/robovm/ios/robovm.xml'
-    }
     defaultConfig {
         applicationId "jp.techacademy.naoyuki.iwamoto.jumpactiongame"
         minSdkVersion 9
-        targetSdkVersion 25
+        targetSdkVersion 23
     }
 }
 

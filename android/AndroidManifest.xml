@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <!-- 9に変更する -->
-    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="25" />
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="23" />
 
     <!-- AdMobに必要なパーミッションを設定する -->
     <uses-permission android:name="android.permission.INTERNET" />

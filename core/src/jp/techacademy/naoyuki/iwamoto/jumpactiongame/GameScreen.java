@@ -122,6 +122,11 @@ public class GameScreen extends ScreenAdapter{
             mSteps.get(i).draw(mGame.batch);
         }
 
+        //Star
+        for (int i = 0; i < mStars.size(); i++) {
+            mStars.get(i).draw(mGame.batch);
+        }
+
         // UFO
         mUfo.draw(mGame.batch);
 
@@ -243,7 +248,6 @@ public class GameScreen extends ScreenAdapter{
         if (Gdx.input.justTouched()) {
             mGame.setScreen(new ResultScreen(mGame, mScore));
         }
-
     }
 
     private void checkCollision() {
@@ -300,8 +304,8 @@ public class GameScreen extends ScreenAdapter{
         }
     }
     private void checkGameOver() {
-        if (mHeightSoFar - CAMERA_HEIGHT / 2 > mPlayer.getY()) {
-            Gdx.app.log("JumpActionGame", "GAMEOVER");
+        if (mHeightSoFar - CAMERA_HEIGHT / 2 > mPlayer.getY())  {
+            Gdx.app.log("JampActionGame", "GAMEOVER");
             mGameState = GAME_STATE_GAMEOVER;
         }
     }
