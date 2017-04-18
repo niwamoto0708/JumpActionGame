@@ -23,11 +23,11 @@ public class Player extends GameObject {
         mState = PLAYER_STATE_FALL;
     }
 
-    public void update (float delta, float accelx) {
+    public void update (float delta, float accelX) {
 
         // 重力をプレイヤーの速度に加算し、速度から位置を計算する
         velocity.add(0, GameScreen.GRAVITY * delta);
-        velocity.x = -accelx / 10 * PLAYER_MOVE_VELOCITY;
+        velocity.x = -accelX / 10 * PLAYER_MOVE_VELOCITY;
         setPosition(getX() + velocity.x * delta, getY() + velocity.y * delta);
 
         // y方向の速度が正（＝上方向）のときにSTATEがPLAYER_STATE_JUMPでなければPLAYER_STATE_JUMPにする

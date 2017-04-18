@@ -236,7 +236,7 @@ public class GameScreen extends ScreenAdapter{
             mPlayer.hitStep();
         }
         mPlayer.update(delta, accel);
-        mHeightSoFar = Math.max(mPlayer.getV(), mHeightSoFar);
+        mHeightSoFar = Math.max(mPlayer.getY(), mHeightSoFar);
 
         // 当たり判定を行う
         checkCollision();
